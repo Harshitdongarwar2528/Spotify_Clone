@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spotify- Web Player: Music for everyone</title>
+  <link rel="stylesheet" href="Style.css">
+  <link rel="stylesheet" href="utility.css">
+</head>
+
+<body>
+  
+  <div class="container flex bg-black ">
+    <div class="left  ">
+      <div class="close"><img width="30" class="invert" src="close.svg" alt="close"></div>
+      <div class="home bg-grey rounded m-1 p-1">
+        <div class="logo"><img class="invert" width="50" src="logo.svg" alt="logo"><span
+            class="logo-text">Spotify</span></div>
+        <ul>
+          <li><img class="invert" src="home.svg" alt="home">Home</li>
+          <li><img class="invert" src="search.svg" alt="search">Search</li>
+
+        </ul>
+      </div>
+      <div class="library bg-grey rounded m-1 p-1">
+        <div class="heading">
+          <img class="invert" src="playlist.svg" alt="playlist">
+          <h2>Your library</h2>
+
+
+        </div>
+        <div class="songList">
+          <ul>
+
+          </ul>
+        </div>
+
+
+        <div class="footer">
+          <a href="https://www.spotify.com/in-en/legal/">Legal</a>
+          <a href="https://www.spotify.com/in-en/safetyandprivacy/">Safety &amp; Privacy Center</a>
+          <a href="https://www.spotify.com/in-en/legal/privacy-policy/">Privacy Policy</a>
+          <a href="https://www.spotify.com/in-en/legal/cookies-policy/">Cookies</a>
+          <a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3">About Ads</a>
+          <a href="https://www.spotify.com/in-en/accessibility/">Accessibility</a>
+        </div>
+      </div>
+
+    </div>
+    <div class="right bg-grey rounded m-1  ">
+      <div class="header">
+        <div class="nav">
+          <div class="hamburgerContainer">
+            <img class="invert hamburger " width="40" src="hamburger.svg" alt="">
+
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#ffffff"
+              fill="none">
+              <path d="M15 6C15 6 9.00001 10.4189 9 12C8.99999 13.5812 15 18 15 18" stroke="currentColor"
+                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#ffffff"
+              fill="none">
+              <path d="M9.00005 6C9.00005 6 15 10.4189 15 12C15 13.5812 9 18 9 18" stroke="currentColor"
+                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </div>
+        </div>
+        <div class="buttons ">
+
+          <button class="signupbtn"><a href="signup.html">Sign Up</a></button>
+          <button class="loginbtn"><a href="login.html">Log In</a></button>
+
+        </div>
+      </div>
+
+      <div class="spotifyPlaylists">
+        <h2>Popular Albums and Singles</h2>
+
+        <div class="cardContainer">
+          <div  data-folder="glory" class="card">
+            <div class="play">
+
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none">
+                <!-- Sharper triangular play icon -->
+                <polygon points="6,4 20,12 6,20" fill="black"/>
+            </svg>
+            
+            </div>
+            <img src="image/honeysingh.jpg" alt="">
+            <h3>Glory</h3>
+            <p>Yo Yo Honey Singh</p>
+          </div>
+          <div data-folder="bollywood" class="card">
+            <div  class="play">
+
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none">
+                <!-- Sharper triangular play icon -->
+                <polygon points="6,4 20,12 6,20" fill="black"/>
+            </svg>
+            
+            </div>
+            <img src="image/img.jpg" alt="">
+            <h3>Harshit</h3>
+            <p>Artist</p>
+          </div>
+          <div data-folder="ashiqi2" class="card">
+            <div class="play">
+
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none">
+                <!-- Sharper triangular play icon -->
+                <polygon points="6,4 20,12 6,20" fill="black"/>
+            </svg>
+            
+            </div>
+            <img src="image/Ashiqui.jpg" alt="">
+            <h3>aashiqui 2</h3>
+            <p>Mithon,Ankit Tiwari,Arijit Singh </p>
+          </div>
+          <div data-folder="karanaujila" class="card">
+            <div class="play">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none">
+                <!-- Sharper triangular play icon -->
+                <polygon points="6,4 20,12 6,20" fill="black"/>
+            </svg>
+            
+            </div>
+            <img src="image/karan.jpg" alt="">
+            <h3>Making Memories</h3>
+            <p>Karan Aujila,Ikky</p>
+          </div>
+          
+          <div data-folder="mismatched" class="card">
+            <div class="play">
+
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none">
+                <!-- Sharper triangular play icon -->
+                <polygon points="6,4 20,12 6,20" fill="black"/>
+            </svg>
+            
+            </div>
+            <img src="image/mismatched.jpg" alt="">
+            <h3>Making Memories</h3>
+            <p>Karan Aujila,Ikky</p>
+          </div>
+          <div data-folder="anuvjain" class="card">
+            <div class="play">
+
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none">
+                <!-- Sharper triangular play icon -->
+                <polygon points="6,4 20,12 6,20" fill="black"/>
+            </svg>
+            
+            </div>
+            <img src="image/anuvjain.jpg" alt="">
+            <h3>Making Memories</h3>
+            <p>Karan Aujila,Ikky</p>
+          </div>
+          <div data-folder="sahiba" class="card">
+            <div class="play">
+
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none">
+                <!-- Sharper triangular play icon -->
+                <polygon points="6,4 20,12 6,20" fill="black"/>
+            </svg>
+            
+            </div>
+            <img src="image/sahiba.jpg" alt="">
+            <h3>Sahiba</h3>
+            <p>Jasleen Royal</p>
+          </div>
+          <div data-folder="yehjawanihaideewani" class="card">
+            <div class="play">
+
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none">
+                <!-- Sharper triangular play icon -->
+                <polygon points="6,4 20,12 6,20" fill="black"/>
+            </svg>
+            
+            </div>
+            <img src="image/yehjawanihaideewani.jpg" alt="">
+            <h3>Sahiba</h3>
+            <p>Jasleen Royal</p>
+          </div>
+          </div> <!-- </div>    isne thik kiya tha neeche se uthake yaha daalna pada ye div ko -->
+    
+
+          <div class="spotifyPlaylists">
+            <h2>Popular Radio</h2>
+            <div class="cardContainer">
+          <div data-folder="arijit" class="card">
+            <div class="play">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none">
+                <!-- Sharper triangular play icon -->
+                <polygon points="6,4 20,12 6,20" fill="black"/>
+            </svg>
+            
+            </div>
+            <img src="image/arijit.jpg" alt="">
+            <h3>Making Memories</h3>
+            <p>Karan Aujila,Ikky</p>
+          </div>
+          <div data-folder="arrahman" class="card">
+            <div class="play">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none">
+                <!-- Sharper triangular play icon -->
+                <polygon points="6,4 20,12 6,20" fill="black"/>
+            </svg>
+            
+            </div>
+            <img src="image/arrahman.jpg" alt="">
+            <h3>Making Memories</h3>
+            <p>Karan Aujila,Ikky</p>
+          </div>
+          <div data-folder="uditnarayan" class="card">
+            <div class="play">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none">
+                <!-- Sharper triangular play icon -->
+                <polygon points="6,4 20,12 6,20" fill="black"/>
+            </svg>
+            
+            </div>
+            <img src="image/uditnarayan.jpg" alt="">
+            <h3>Making Memories</h3>
+            <p>Karan Aujila,Ikky</p>
+          </div>
+          <div data-folder="kk" class="card">
+            <div class="play">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none">
+                <!-- Sharper triangular play icon -->
+                <polygon points="6,4 20,12 6,20" fill="black"/>
+            </svg>
+            
+            </div>
+            <img src="image/kk.jpg" alt="">
+            <h3>Making Memories</h3>
+            <p>Karan Aujila,Ikky</p>
+          </div>
+          <div data-folder="shreyaghoshal" class="card">
+            <div class="play">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none">
+                <!-- Sharper triangular play icon -->
+                <polygon points="6,4 20,12 6,20" fill="black"/>
+            </svg>
+            
+            </div>
+            <img src="image/shreyaghoshal.jpg" alt="">
+            <h3>Making Memories</h3>
+            <p>Karan Aujila,Ikky</p>
+          </div>
+          <div data-folder="alkayagnik" class="card">
+            <div class="play">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none">
+                <!-- Sharper triangular play icon -->
+                <polygon points="6,4 20,12 6,20" fill="black"/>
+            </svg>
+            
+            </div>
+            <img src="image/alkayagnik.jpg" alt="">
+            <h3>Making Memories</h3>
+            <p>Karan Aujila,Ikky</p>
+          </div>
+       
+
+        </div>
+
+
+
+
+
+        <div class="spotifyPlaylists">
+          <h2>Featured Charts</h2>
+          <div class="cardContainer">
+            <div data-folder="region_global" class="card">
+              <div class="play">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none">
+                  <!-- Sharper triangular play icon -->
+                  <polygon points="6,4 20,12 6,20" fill="black"/>
+              </svg>
+              
+              </div>
+              <img src="image/region_global.jpg" alt="">
+              <h3>Making Memories</h3>
+              <p>Karan Aujila,Ikky</p>
+            </div>
+            <div data-folder="region_in" class="card">
+              <div class="play">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none">
+                  <!-- Sharper triangular play icon -->
+                  <polygon points="6,4 20,12 6,20" fill="black"/>
+              </svg>
+              
+              </div>
+              <img src="image/region_in.jpg" alt="">
+              <h3>Making Memories</h3>
+              <p>Karan Aujila,Ikky</p>
+            </div>
+            <div data-folder="/region_global_default" class="card">
+              <div class="play">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none">
+                  <!-- Sharper triangular play icon -->
+                  <polygon points="6,4 20,12 6,20" fill="black"/>
+              </svg>
+              
+              </div>
+              <img src="image/region_global_default.jpg" alt="">
+              <h3>Making Memories</h3>
+              <p>Karan Aujila,Ikky</p>
+            </div>
+            <div data-folder="region_global_default1" class="card">
+              <div class="play">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none">
+                  <!-- Sharper triangular play icon -->
+                  <polygon points="6,4 20,12 6,20" fill="black"/>
+              </svg>
+              
+              </div>
+              <img src="image/region_global_default_1.jpg" alt="">
+              <h3>Making Memories</h3>
+              <p>Karan Aujila,Ikky</p>
+            </div>
+            <div data-folder="region_in_default" class="card">
+              <div class="play">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none">
+                  <!-- Sharper triangular play icon -->
+                  <polygon points="6,4 20,12 6,20" fill="black"/>
+              </svg>
+              
+              </div>
+              <img src="image/region_in_default.jpg" alt="">
+              <h3>Making Memories</h3>
+              <p>Karan Aujila,Ikky</p>
+            </div>
+            <div data-folder="region_in_default1" class="card">
+              <div class="play">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none">
+                  <!-- Sharper triangular play icon -->
+                  <polygon points="6,4 20,12 6,20" fill="black"/>
+              </svg>
+              
+              </div>
+              <img src="image/region_in_default_1.jpg" alt="">
+              <h3>Making Memories</h3>
+              <p>Karan Aujila,Ikky</p>
+            </div>
+          </div>
+
+
+        </div>
+        <div class="playbar">
+          <div class="seekbar">
+            <div class="circle">
+
+            </div>
+          </div>
+          <div class="abovebar">
+            <div class="songinfo"></div>
+            <div class="songbuttons">
+              <img id="previous" src="prevsong.svg" alt="">
+              <img id="play" src="play.svg" alt="">
+              <img id="next" src="nextsong.svg" alt="">
+            </div>
+            <div class="timevol">
+              <div class="songtime">
+
+              </div>
+              <div class="volume">
+                <img width="25" src="volume.svg" alt="">
+                <div class="range">
+                  <input type="range" name="volume" id="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+    
+  </div>
+  <script src="Script.js"></script>
+</body>
+
+</html>
